@@ -1,0 +1,126 @@
+.footer {
+  background-color: $DarkBlue3;
+  &_content {
+    padding-top: 193px;
+    padding-bottom: 58px;
+    &_head {
+      width: 87.5%;
+      margin: auto;
+      padding-bottom: 55px;
+      img {
+        width: 110px;
+        height: 35px;
+      }
+    }
+    &_sub {
+      width: 87.5%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 1090px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      &_line1 {
+        flex: 1.5;
+        display: flex;
+        align-items: flex-start;
+        @media screen and (max-width: 1090px) {
+          margin-bottom: 50px;
+        }
+        img {
+          margin-right: 29px;
+          padding-top: 5px;
+        }
+        &_para {
+          font-size: 1.6rem;
+          color: $white;
+          font-family: $Raleway;
+          width: 70%;
+          line-height: 1.6;
+          @media screen and (max-width: 1090px) {
+            width: 100%;
+          }
+        }
+      }
+      &_line2 {
+        flex: 1;
+        @media screen and (max-width: 1090px) {
+          margin-bottom: 175px;
+        }
+        &_box1 {
+          display: flex;
+          margin-bottom: 24px;
+          img {
+            margin-right: 29px;
+          }
+          p {
+            font-size: 1.3rem;
+            color: $white;
+            font-family: $Raleway;
+            @media screen and (max-width: 1090px) {
+              font-size: 2rem;
+            }
+          }
+        }
+        &_box2 {
+          display: flex;
+          img {
+            margin-right: 29px;
+          }
+          p {
+            font-size: 1.3rem;
+            color: $white;
+            font-family: $Raleway;
+            @media screen and (max-width: 1090px) {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      &_line3 {
+        flex: 1;
+        @media screen and (max-width: 1090px) {
+          margin-bottom: 118px;
+        }
+        &_list {
+          &_li {
+            list-style: none;
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+            a {
+              text-decoration: none;
+              color: $white;
+              font-family: $Raleway;
+              font-size: 1.7rem;
+              @media screen and (max-width: 1090px) {
+                font-size: 2rem;
+              }
+              &:hover {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      &_line5 {
+        flex: 0.5;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media screen and (max-width: 1090px) {
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+        img {
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}

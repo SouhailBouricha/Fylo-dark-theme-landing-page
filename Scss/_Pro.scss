@@ -1,0 +1,73 @@
+.pro {
+  padding: 144px 0px 182px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  &_image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 90%;
+      max-width: 619px;
+    }
+  }
+  &_text {
+    @media screen and (max-width: 1300px) {
+      padding: 0px 30px;
+    }
+    flex: 1;
+    &_head {
+      color: $white;
+      font-size: 3rem;
+      font-family: $Raleway;
+      margin-top: 126px;
+      @media screen and (max-width: 500px) {
+        font-size: 2rem;
+      }
+    }
+    &_sub1 {
+      font-size: 1.3rem;
+      color: $white;
+      font-weight: 400;
+      font-family: $Raleway;
+      width: 50%;
+      margin-top: 35px;
+      line-height: 1.8;
+      @media screen and (max-width: 1300px) {
+        width: 100%;
+      }
+    }
+    &_sub2 {
+      font-size: 1.3rem;
+      color: $white;
+      font-weight: 400;
+      font-family: $Raleway;
+      margin-top: 27px;
+      width: 55%;
+      line-height: 1.8;
+      @media screen and (max-width: 1300px) {
+        width: 100%;
+      }
+    }
+    &_show {
+      margin-top: 37px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        text-decoration: underline $white;
+      }
+      label {
+        font-size: 1.4rem;
+        color: $white;
+        font-family: $Raleway;
+        cursor: pointer;
+      }
+    }
+  }
+}

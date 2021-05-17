@@ -1,0 +1,163 @@
+.Avatares {
+  &_cartes {
+    padding: 0px 140px 368px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (max-width: 650px) {
+      padding: 0px 90px 140px;
+    }
+    @media screen and (max-width: 550px) {
+      padding: 0px 30px 140px;
+    }
+    &_carte {
+      background-color: $DarkBlue4;
+      padding-top: 44px;
+      padding-left: 23px;
+      padding-right: 28px;
+      padding-bottom: 28px;
+      position: relative;
+      z-index: 110;
+      @media screen and (max-width: 550px) {
+        padding-left: 20px;
+        padding-right: 18px;
+      }
+      @media screen and (max-width: 450px) {
+        padding-top: 30px;
+      }
+      &_big {
+        position: absolute;
+        top: -3.5rem;
+        left: -1.2rem;
+        z-index: -100;
+        @media screen and (max-width: 550px) {
+          width: 45px;
+          height: 33px;
+        }
+      }
+      flex: 1;
+      &_para {
+        color: $white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: $Raleway;
+        margin-bottom: 27px;
+        line-height: 1.5;
+        @media screen and (max-width: 450px) {
+          font-size: 1rem;
+        }
+      }
+      &_infos {
+        display: flex;
+        color: $white;
+        font-family: $Raleway;
+        &_img {
+          width: 27px;
+          margin-right: 8px;
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        &_text {
+          &_head {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+  &_blaka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    justify-content: center;
+    background-color: $DarkBlue1;
+    width: 45.66%;
+    margin: auto;
+    padding-top: 52px;
+    padding-bottom: 44px;
+    border-radius: 0.5rem;
+    transform: translateY(165px);
+    //margin-bottom: 200px;
+    @media screen and (max-width: 1180px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 90%;
+    }
+    &_head {
+      font-size: 2.6rem;
+      font-family: $Raleway;
+      margin-bottom: 33px;
+      text-align: center;
+      @media screen and (max-width: 350px) {
+        font-size: 2rem;
+      }
+    }
+    &_sub {
+      font-size: 1.3rem;
+      font-family: $Raleway;
+      width: 70%;
+      text-align: center;
+      margin: auto;
+      line-height: 1.5;
+      margin-bottom: 46px;
+      @media screen and (max-width: 600px) {
+        width: 90%;
+      }
+    }
+    &_ema {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 1400px) {
+        flex-direction: column;
+      }
+      &_text {
+        font-size: 1.6rem;
+        width: 55.6%;
+        padding: 15px 40px;
+        border-radius: 3rem;
+        border: none;
+        outline: none;
+        @media screen and (max-width: 1400px) {
+          width: 80%;
+          margin-bottom: 39px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 90%;
+        }
+      }
+      &_btn {
+        text-decoration: none;
+        color: $white;
+        font-size: 1.3rem;
+        font-weight: $Raleway;
+        border-radius: 3rem;
+        background: linear-gradient(to left, $Cyan, $Blue);
+        padding: 16.5px 47px;
+        text-align: center;
+        margin-left: 29px;
+        &:hover {
+          background: $Cyan;
+        }
+        @media screen and (max-width: 1400px) {
+          width: 80%;
+          margin-left: 0px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

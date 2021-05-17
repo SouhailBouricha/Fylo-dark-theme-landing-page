@@ -1,0 +1,52 @@
+.Cartes {
+  background-color: $DarkBlue2;
+  padding: 0px 283px 140px;
+  @media screen and (max-width: 1300px) {
+    padding: 0px 183px 140px;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0px 50px 140px;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 0px 0px 140px;
+  }
+  &_first {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &:not(:last-child) {
+      padding-bottom: 102px;
+    }
+    &_carte {
+      text-align: center;
+      &:not(:last-child) {
+        @media screen and (max-width: 700px) {
+          margin-bottom: 102px;
+        }
+      }
+      &_head {
+        font-size: 1.6rem;
+        color: $white;
+        font-family: $Raleway;
+        margin-top: 34px;
+      }
+      &_sub {
+        font-size: 1.5rem;
+        font-family: $Raleway;
+        font-weight: 400;
+        color: $white;
+        width: 58%;
+        margin-top: 18px;
+        display: inline-block;
+        margin: 18px auto 0px;
+        @media screen and (max-width: 700px) {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
